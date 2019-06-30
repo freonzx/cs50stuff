@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h4>{{ data['name'] }}</h4>
+        <p>Stock Symbol: {{ data['symbol'] }}</p>
+        <p>Price: {{ "${:,.2f}".format(data['price']) }}</p>
+    </div>
+{% endblock %}
